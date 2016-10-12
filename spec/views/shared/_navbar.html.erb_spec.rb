@@ -25,3 +25,20 @@ describe "shared/_navbar.html.erb" do
     end
   end
 end
+
+
+    context "Check loged in" do
+
+       it " render sign up and login" do
+           render
+           expect(rendered).to have_contect("Log In")
+           expect(rendered).to have_contect("Sign Up")
+        end
+    end
+  end
+end
+
+
+  end
+
+  end
